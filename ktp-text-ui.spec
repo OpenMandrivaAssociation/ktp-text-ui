@@ -1,6 +1,6 @@
 Summary:	UI for KDE Telepathy text messaging
 Name:		ktp-text-ui
-Version:	16.04.2
+Version:	16.04.3
 Release:	1
 Epoch:		1
 License:	GPLv2+
