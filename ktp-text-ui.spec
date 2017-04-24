@@ -1,6 +1,6 @@
 Summary:	UI for KDE Telepathy text messaging
 Name:		ktp-text-ui
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 License:	GPLv2+
@@ -63,7 +63,7 @@ BuildRequires:	pkgconfig(shared-mime-info)
 %description
 UI for KDE Telepathy text messaging
 
-%files
+%files -f all.lang
 %{_bindir}/ktp-log-viewer
 %{_libdir}/libexec/ktp-adiumxtra-protocol-handler
 %{_libdir}/libexec/ktp-text-ui
@@ -79,6 +79,7 @@ UI for KDE Telepathy text messaging
 %{_libdir}/qt5/plugins/ktptextui_message_filter_bugzilla.so
 %{_libdir}/qt5/plugins/ktptextui_message_filter_emoticons.so
 %{_libdir}/qt5/plugins/ktptextui_message_filter_formatting.so
+%{_libdir}/qt5/plugins/ktptextui_message_filter_geopoint.so
 %{_libdir}/qt5/plugins/ktptextui_message_filter_highlight.so
 %{_libdir}/qt5/plugins/ktptextui_message_filter_images.so
 %{_libdir}/qt5/plugins/ktptextui_message_filter_latex.so
@@ -100,6 +101,7 @@ UI for KDE Telepathy text messaging
 %{_datadir}/kservices5/ktptextui_message_filter_bugzilla.desktop
 %{_datadir}/kservices5/ktptextui_message_filter_emoticons.desktop
 %{_datadir}/kservices5/ktptextui_message_filter_formatting.desktop
+%{_datadir}/kservices5/ktptextui_message_filter_geopoint.desktop
 %{_datadir}/kservices5/ktptextui_message_filter_highlight.desktop
 %{_datadir}/kservices5/ktptextui_message_filter_images.desktop
 %{_datadir}/kservices5/ktptextui_message_filter_latex.desktop
@@ -124,3 +126,13 @@ UI for KDE Telepathy text messaging
 
 %install
 %ninja_install -C build
+%find_lang kcm_ktp_chat_appearance
+%find_lang kcm_ktp_chat_behavior
+%find_lang kcm_ktp_chat_messages
+%find_lang kcm_ktp_chat_otr
+%find_lang ktp-adiumxtra-protocol-handler
+%find_lang ktp-filters
+%find_lang ktp-log-viewer
+%find_lang ktp-text-ui
+%find_lang ktpchat
+cat *.lang >all.lang
