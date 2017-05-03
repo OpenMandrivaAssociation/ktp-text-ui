@@ -26,6 +26,7 @@ BuildRequires:	cmake(Qt5ScriptTools)
 BuildRequires:	cmake(Qt5Test)
 BuildRequires:	cmake(Qt5Qml)
 BuildRequires:	cmake(Qt5WebKit)
+BuildRequires:	cmake(Qt5WebEngine)
 BuildRequires:	cmake(Qt5TextToSpeech)
 BuildRequires:	cmake(Qt5Xml)
 BuildRequires:	cmake(KF5Config)
@@ -61,7 +62,7 @@ BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	pkgconfig(shared-mime-info)
 
 %description
-UI for KDE Telepathy text messaging
+UI for KDE Telepathy text messaging.
 
 %files -f all.lang
 %{_bindir}/ktp-log-viewer
