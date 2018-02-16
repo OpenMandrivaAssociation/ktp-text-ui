@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   ktp-text-ui-17.12.1.tar.xz: 077067b316556667f47db5a86c303c204487918a
+sources:
+  ktp-text-ui-17.12.2.tar.xz: 3bcae78213a5235ab2894738cbef2fd05346be52
