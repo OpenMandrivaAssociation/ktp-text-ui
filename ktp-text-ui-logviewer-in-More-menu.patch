@@ -1,0 +1,11 @@
+diff -up ktp-text-ui-19.04.2/logviewer/org.kde.ktplogviewer.desktop.omv~ ktp-text-ui-19.04.2/logviewer/org.kde.ktplogviewer.desktop
+--- ktp-text-ui-19.04.2/logviewer/org.kde.ktplogviewer.desktop.omv~	2019-06-13 20:59:29.118007830 +0200
++++ ktp-text-ui-19.04.2/logviewer/org.kde.ktplogviewer.desktop	2019-06-13 20:59:36.165007902 +0200
+@@ -142,6 +142,6 @@ Exec=ktp-log-viewer %u
+ Type=Application
+ Terminal=false
+ Icon=kde-im-log-viewer
+-Categories=Qt;KDE;Network;InstantMessaging;
++Categories=Qt;KDE;Network;InstantMessaging;X-KDE-More;
+ X-DBUS-StartupType=Unique
+ X-DBUS-ServiceName=org.kde.ktplogviewer
