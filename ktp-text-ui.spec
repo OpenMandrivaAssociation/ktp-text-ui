@@ -1,6 +1,6 @@
 Summary:	UI for KDE Telepathy text messaging
 Name:		ktp-text-ui
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 Epoch:		1
 License:	GPLv2+
@@ -12,7 +12,7 @@ Url:		http://www.kde.org
 %else
 %define ftpdir stable
 %endif
-Source0:	http://download.kde.org/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{ftpdir}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Patch0:		ktp-text-ui-logviewer-in-More-menu.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
