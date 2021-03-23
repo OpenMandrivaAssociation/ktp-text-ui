@@ -1,6 +1,6 @@
 Summary:	UI for KDE Telepathy text messaging
 Name:		ktp-text-ui
-Version:	20.12.3
+Version:	21.03.80
 Release:	1
 Epoch:		1
 License:	GPLv2+
